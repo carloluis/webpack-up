@@ -19,9 +19,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				use: [
-					'babel-loader'
-				]
+				use: ['babel-loader']
 			},
 			{
 				test: /\.scss$/,
@@ -39,6 +37,10 @@ module.exports = {
 						}
 					]
 				})
+			},
+			{
+				test: /\.(png|jpg|svg|otf|woff|woff2|eot|ttf)$/,
+				use: ['file-loader']
 			}
 		]
 	},

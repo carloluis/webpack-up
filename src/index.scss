@@ -3,5 +3,21 @@
 
 	& > h1 {
 		text-align: center;
+
+		&::before, &::after {
+			content: '';
+			background: url(./assets/wp-icon-small.svg) center center / 16px 16px no-repeat padding-box;
+			display: inline-block;
+			height: 16px;
+			width: 16px;
+			position: relative;
+		}
+
+		&::before {
+			left: -4px;
+		}
+		&::after {
+			left: 4px;
+		}
 	}
 }
