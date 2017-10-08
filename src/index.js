@@ -1,3 +1,5 @@
+import './index.scss';
+
 const text = 'webpack-up!';
 
 const app = document.querySelector('#app');
