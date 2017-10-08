@@ -13,11 +13,25 @@ module.exports = {
 		path: paths.DIST,
 		filename: 'bundle.js'
 	},
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: [
+					'babel-loader'
+				]
+			}
+		]
+	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.join(paths.SRC, 'index.html')
 		})
 	],
+	resolve: {
+		extensions: ['.js']
+	},
 	devServer: {
 		contentBase: paths.SRC
 	}
