@@ -1,0 +1,29 @@
+{
+  "name": "webpack-up",
+  "version": "1.0.0",
+  "description": "webpack up project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "buidl:prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloluis/webpack-up.git"
+  },
+  "keywords": [
+    "webpack",
+    "node",
+    "es6"
+  ],
+  "author": "Carloluis Rodríguez <carloluisr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloluis/webpack-up/issues"
+  },
+  "homepage": "https://github.com/carloluis/webpack-up#readme",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
+}
