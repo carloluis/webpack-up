@@ -1,0 +1,19 @@
+# dependencies
+/node_modules/
+
+# output
+/dist
+
+# editors
+/.vscode
+
+# misc
+npm-debug.log
+yarn-error.log
+stats.json
+
+yarn.lock
+
+# system files
+.DS_Store
+Thumbs.db
